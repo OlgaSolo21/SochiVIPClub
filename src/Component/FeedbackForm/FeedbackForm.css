@@ -1,0 +1,256 @@
+.feedbackForm {
+    display: flex;
+    border-radius: 20px;
+    border: #ed6f25 1px solid;
+    justify-content: space-around;
+    margin: 60px 15px 30px 15px;
+    align-items: center;
+}
+
+.feedbackForm__wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0;
+    align-items: center;
+}
+
+.feedbackForm__title {
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 1.5;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-style: italic;
+}
+
+.feedbackForm__lines {
+    display: flex;
+    margin: 8px 0;
+    align-items: center;
+}
+
+.feedbackForm__span {
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 400;
+    margin: 8px;
+    text-transform: uppercase;
+}
+
+.feedbackForm__line {
+    width: 20px;
+    height: 1px;
+    background-color: #ed6f25;
+}
+
+.feedbackForm__subtitle {
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 400;
+    margin: 0;
+}
+
+.feedbackForm__subtitle:last-of-type {
+    padding-bottom: 20px;
+}
+
+.feedbackForm__form {
+    display: flex;
+    flex-direction: column;
+    max-width: 450px;
+    width: 100%;
+}
+
+.feedbackForm__input {
+    border: #ed6f25 1px solid;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: transparent;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #FFFFFF;
+}
+
+.error {
+    color: red;
+    margin: 0;
+}
+
+.feedbackForm__button {
+    display: flex;
+    justify-content: center;
+    background-color: #ed6f25;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 25px 0;
+    border: none;
+    color: #FFFFFF;
+    font-size: 22px;
+    line-height: 1.5;
+    cursor: pointer;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.feedbackForm__text {
+    /*max-width: 300px;*/
+    font-size: 11px;
+    line-height: 1.02;
+    font-weight: 400;
+    margin: 0;
+    text-align: center;
+}
+
+.policy {
+    text-decoration: none;
+    color: #ed6f25;
+    font-weight: 500;
+    margin: 0 4px;
+}
+
+@media screen and (max-width: 990px) {
+    .feedbackForm__form {
+        max-width: 370px;
+    }
+}
+
+@media screen and (max-width: 890px) {
+    .feedbackForm__wrapper {
+        max-width: 420px;
+        width: 100%;
+    }
+    .feedbackForm__subtitle {
+        font-size: 16px;
+    }
+    .feedbackForm__span {
+        font-size: 14px;
+    }
+    .feedbackForm__lines {
+        margin: 4px 0;
+    }
+    .feedbackForm__form {
+        max-width: 320px;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .feedbackForm {
+        margin: 32px 15px 20px 15px;
+    }
+    .feedbackForm__form {
+        margin: 40px 15px;
+    }
+    .feedbackForm__input {
+        font-size: 16px;
+    }
+    .feedbackForm__button {
+        font-size: 18px;
+    }
+    .feedbackForm__subtitle {
+        margin-left: 10px;
+        font-size: 14px;
+        text-align: center;
+    }
+    .feedbackForm__title {
+        margin: 0 0 10px 10px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .feedbackForm__wrapper {
+        max-width: 280px;
+        padding: 20px 0;
+    }
+    .feedbackForm__form {
+        margin: 20px 15px;
+    }
+    .feedbackForm__button {
+        margin: 15px 0;
+        font-size: 16px;
+    }
+    .feedbackForm__subtitle:last-of-type {
+        padding-bottom: 10px;
+    }
+    .feedbackForm__title {
+        font-size: 18px;
+    }
+    .feedbackForm__subtitle {
+        font-size: 10px;
+    }
+    .feedbackForm__span {
+        margin: 0 8px;
+    }
+    .feedbackForm__input {
+        padding: 6px;
+        margin-top: 14px;
+    }
+    .feedbackForm__text {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .feedbackForm {
+        margin: 32px 15px 20px 15px;
+        justify-content: space-between;
+    }
+    .feedbackForm__title {
+        margin: 10px 0;
+        font-size: 12px;
+        text-align: center;
+    }
+    .feedbackForm__subtitle {
+        font-size: 8px;
+        text-align: center;
+    }
+    .feedbackForm__span {
+        font-size: 8px;
+    }
+    .feedbackForm__line {
+        width: 10px;
+    }
+    .feedbackForm__form {
+        margin: 10px 15px;
+    }
+    .feedbackForm__input {
+        font-size: 12px;
+        margin-top: 10px;
+    }
+    .feedbackForm__button {
+        font-size: 12px;
+    }
+    .feedbackForm__text {
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .feedbackForm {
+        margin: 0 10px;
+        gap: 10px;
+    }
+    .feedbackForm__title {
+        font-size: 10px;
+    }
+    .feedbackForm__subtitle {
+        font-size: 6px;
+    }
+    .feedbackForm__span {
+        font-size: 6px;
+    }
+    .feedbackForm__form {
+        margin: 5px 10px 5px 0;
+        max-width: 150px;
+    }
+    .feedbackForm__input {
+        font-size: 10px;
+    }
+    .feedbackForm__button {
+        font-size: 10px;
+    }
+    .feedbackForm__text {
+        font-size: 4px;
+    }
+}

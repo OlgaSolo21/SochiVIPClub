@@ -1,0 +1,243 @@
+.aboutClub {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    justify-items: start;
+    gap: 40px;
+    padding-top: 40px;
+    align-items: start;
+    /*display: flex;*/
+    /*justify-content: space-between;*/
+    /*flex-direction: column;*/
+    /*align-items: flex-start;*/
+}
+
+.aboutClub__info {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    max-width: 100%;
+}
+
+.aboutClub__text {
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+}
+
+.aboutClub__title {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.aboutClub__address {
+    color: #a19d9d;
+    margin-bottom: 12px;
+}
+
+.aboutClub__time {
+    color: #ed6f25;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.5;
+    margin: 30px 0 15px;
+}
+
+.aboutClub__timeInfo {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.aboutClub__button {
+    border-radius: 30px;
+    padding: 10px;
+    background-color: #ed6f25;
+    color: #FFF;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.aboutClub__button:hover {
+    box-shadow: #313131 0 0 20px;
+    color: #171616;
+}
+
+.aboutClub__image {
+    background-image: url("../../assets/aboutClub.jpg");
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: #ffffff;
+    box-sizing: border-box;
+    background-position: 50% 50%;
+    position: relative;
+    z-index: 0;
+    transition: opacity 0.5s linear;
+    border-radius: 10px;
+}
+
+.aboutClub__image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #2A2C2F;
+    opacity: .3;
+    z-index: -1;
+}
+
+.aboutClub__image-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 40px;
+    position: relative;
+    z-index: 0;
+    transition: opacity 0.5s linear;
+}
+
+.aboutClub__image-text::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #2A2C2F;
+    opacity: .3;
+    z-index: -1;
+    border-radius: 10px;
+}
+
+.aboutClub__image-title {
+    margin: 0;
+    padding: 0;
+    font-size: 82px;
+    line-height: 1.5;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.aboutClub__image-subtitle {
+    margin: 0;
+    padding: 0;
+    font-size: 34px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 1210px) {
+    .aboutClub__image-text {
+        margin: 10px;
+    }
+    .aboutClub__image-title {
+        font-size: 60px;
+    }
+    .aboutClub__image-subtitle {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 1010px) {
+    .aboutClub {
+        gap: 15px;
+        grid-template-columns: 210px 1fr;
+    }
+    .aboutClub__text {
+        margin-top: 60px;
+    }
+    .aboutClub__title {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 865px) {
+    .aboutClub__image-title {
+        font-size: 44px;
+    }
+    .aboutClub__image-subtitle {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .aboutClub {
+        padding-top: 30px;
+        grid-template-columns: 180px 1fr;
+    }
+    .aboutClub__timeInfo {
+        font-size: 16px;
+        padding-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 685px) {
+    .aboutClub {
+        grid-template-columns: 150px 1fr;
+        padding-top: 0;
+    }
+    .aboutClub__image {
+        height: 350px;
+    }
+    .aboutClub__info {
+        gap: 15px;
+    }
+    .aboutClub__text {
+        margin-top: 50px;
+    }
+    .aboutClub__title {
+        font-size: 15px;
+    }
+    .aboutClub__image-title {
+        font-size: 30px;
+    }
+    .aboutClub__image-subtitle {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 565px) {
+    .aboutClub {
+        grid-template-columns: 90px 1fr;
+    }
+    .aboutClub__title {
+        font-size: 12px;
+    }
+    .aboutClub__image-title {
+        font-size: 20px;
+    }
+    .aboutClub__image-subtitle {
+        font-size: 12px;
+    }
+    .aboutClub__timeInfo {
+        font-size: 8px;
+    }
+    .aboutClub__button {
+        font-size: 10px;
+        padding: 5px;
+    }
+    .aboutClub__image {
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .aboutClub__image-title {
+        font-size: 16px;
+    }
+    .aboutClub__image-subtitle {
+        font-size: 10px;
+    }
+}

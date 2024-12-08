@@ -1,0 +1,116 @@
+.trainer {
+    display: flex;
+    padding-top: 50px;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+.trainer__visual {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.trainer__image {
+    height: 600px;
+    object-fit: contain;
+}
+
+.trainer__info {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    margin-top: 50px;
+}
+
+.trainer__name {
+    font-size: 36px;
+    margin: 0;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.trainer__position {
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 8px 0 40px 0;
+}
+
+.trainer__line {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-top: 1px solid rgba(244, 242, 242, 0.62);
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(244, 242, 242, 0.62);
+}
+
+.trainer__text {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+@media screen and (max-width: 1150px) {
+    .trainer {
+        gap: 40px;
+    }
+    .trainer__position {
+        margin: 8px 0 20px 0;
+        font-size: 12px;
+    }
+    .trainer__text {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 896px) {
+    .trainer {
+        gap: 20px;
+    }
+    .trainer__image {
+        height: 400px;
+    }
+
+    .trainer__info {
+        margin-top: 25px;
+    }
+
+    .trainer__name {
+        font-size: 28px;
+    }
+
+    .trainer__line {
+        padding: 10px 0;
+        gap: 10px;
+    }
+
+    .trainer__position {
+        font-size: 10px;
+        margin: 8px 0;
+    }
+}
+
+@media screen and (max-width: 705px) {
+    .trainer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        padding-top: 25px;
+    }
+    .trainer__image {
+        height: 370px;
+    }
+    .trainer__info {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .trainer__name {
+        font-size: 20px;
+    }
+    .trainer__text {
+        font-size: 12px;
+    }
+}

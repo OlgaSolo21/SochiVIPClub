@@ -1,0 +1,31 @@
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icons__links {
+    display: flex;
+    background-size: contain;
+}
+
+.icons__link {
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media screen and (max-width: 768px) {
+    .icons__link {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 565px) {
+    .icons__link {
+        width: 30px;
+        height: 30px;
+    }
+}
